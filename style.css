@@ -208,9 +208,7 @@ h1 {
   margin-left: 7%;
   font-weight: 800;
   display: flex;
-  text-align: center;
-  justify-content: center;
-  font-size: 30px;
+  font-size: 35px;
   gap: 15px;
 }
 
@@ -232,7 +230,7 @@ h1 {
 }
 
 .funcionamento-horarios-kids  {
-  margin-right: 100px;
+  margin-right: 140px;
 }
 
 .funcionamento-horarios-kids p {
@@ -252,6 +250,90 @@ h1 {
   margin-bottom: 20px;
 }
 
+.professores-container{
+  width: 100%;
+  height: 40vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+
+  background-color: rgb(85 , 1, 1);;
+}
+
+.card-professor {
+  width: 40%;
+  height: 90%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.professor-name {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #e1e1e1;
+
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.professor-info {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.professor-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  border-radius: 4px;
+}
+
+.professor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.professor-description {
+  width: 100%;
+  height: 100%;
+
+  font-style: normal;
+  font-weight: 300;
+  color: rgb(200, 200, 200);
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 20px;
+
+  gap: 20px;
+  object-fit: cover;
+}
+
 .local {
   width: 100%;
   height: 100%;
@@ -260,7 +342,7 @@ h1 {
   align-items: center;
   flex-direction: column;
 
-  background-color:rgb(85 , 1, 1);
+  background-color: #e1e1e1;
 }
 
 .local-title {
@@ -270,16 +352,16 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  color:#fff;
+  color:rgb(85 , 1, 1);
   font-weight: 800;
   margin: 25px;
-  gap: 10px; /* Ajuste a distância entre o ícone e o texto */
+  gap: 10px;
 }
 
 .location-icon {
   width: 25px;
   height: 100%;
-  color: #fff; 
+  color:rgb(85 , 1, 1);
 }
 
 .local-map{
@@ -339,8 +421,7 @@ h1 {
   align-items: center;
   width: 100%;
   height: 5vh;
-  background-color:#fff;
-  color: rgb(85 , 1, 1);;
+  background-color:rgb(85 , 1, 1);
   font-size: 15px;
   font-weight: 700;
 }
