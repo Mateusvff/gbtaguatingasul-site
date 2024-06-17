@@ -339,6 +339,7 @@ h1 {
 
 .card-professor:hover::before {
   opacity: 1; /* Torna a sobreposição visível ao passar o mouse */
+  cursor: pointer;
 }
 
 .card-professor h2 {
@@ -416,7 +417,6 @@ h1 {
 
   border: none;
   border-radius: 5px;
-
 }
 
 .btn-whatsapp {
