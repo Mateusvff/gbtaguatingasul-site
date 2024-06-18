@@ -304,56 +304,79 @@ h1 {
 }
 
 .card-professor {
-  width: 25%;
-  height: 80%;
+  width: 40%;
+  height: 90%;
+
   display: flex;
+  align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.professor-name {
+  width: 100%;
+
+  display: flex;
   align-items: center;
-  position: relative;
+  justify-content: center;
+
+  h3 {
+    color: #e1e1e1;
+
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+}
+
+.professor-info {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.professor-image {
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  background-color: rgb(85, 1, 1); /* Adiciona fundo para visualização */
+
+  border-radius: 3px;
 }
 
-.card-professor img {
+.professor-image img {
   width: 100%;
   height: 100%;
+
   object-fit: cover;
-  position: absolute; /* Permite que o texto sobreponha a imagem */
-  top: 0;
-  left: 0;
-  transition: all 0.3s ease; /* Transição suave para a imagem */
 }
 
-.card-professor::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.professor-description {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Sobreposição preta com 50% de opacidade */
-  opacity: 0;
-  transition: opacity 0.3s ease; /* Transição suave para a sobreposição */
-  z-index: 1; /* Garante que a sobreposição fique acima da imagem */
-}
 
-.card-professor:hover::before {
-  opacity: 1; /* Torna a sobreposição visível ao passar o mouse */
-  cursor: pointer;
-}
+  font-style: normal;
+  font-weight: 300;
+  color: rgb(200, 200, 200);
+  font-size: 14px;
 
-.card-professor h2 {
-  position: relative;
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.3s ease; /* Transição suave para a visibilidade e opacidade do texto */
-  z-index: 2; /* Garante que o texto fique acima da sobreposição */
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 20px;
 
-.card-professor:hover h2 {
-  visibility: visible;
-  opacity: 1; /* Torna o texto visível e opaco ao passar o mouse */
+  gap: 20px;
 }
 
 .local {
@@ -420,7 +443,7 @@ h1 {
 }
 
 .btn-whatsapp {
-  position: fixed;
+  position: fixed; 
   bottom: 14px;
   right: 24px;
   z-index: 99;
