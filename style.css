@@ -87,14 +87,13 @@ header nav {
 }
 
 .app {
-    background-image: url("assets/background.jpg");
+    background-image: url("assets/bessa.jpg");
+    background-position: center 40%;
     background-size: cover;
-    opacity: 0.9;
 
     width: 100%;
     height: 100vh;
     padding: 20px;
-    position: relative;
 }
 
 .logo {
@@ -191,7 +190,7 @@ h1 {
   display: flex;
   flex-direction: column;
   font-size: 16px;
-  gap: 15px;
+  gap: 5px;
 }
 
 .left-about p {
@@ -261,12 +260,14 @@ h1 {
 }
 
 .funcionamento-horarios-adulto p {
+  display: flex;
+  justify-content: center;
   letter-spacing: 0.8px;
   margin-bottom: 5px;
 }
 
 .funcionamento-horarios-kids {
-  margin: 0 140px 90px 0;
+  margin: 0 200px 90px 0;
 
   display: flex;
   flex-direction: column;
@@ -274,6 +275,9 @@ h1 {
 }
 
 .funcionamento-horarios-kids p {
+  display: flex;
+  justify-content: center;
+  
   letter-spacing: 0.8px;
   margin-bottom: 5px;
 }
@@ -292,20 +296,20 @@ h1 {
 
 .professores-container{
   width: 100%;
-  height: 50vh;
+  height: 60vh;
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 50px;
+  gap: 150px;
 
   background-color: rgb(85 , 1, 1);;
 }
 
 .card-professor {
   width: 40%;
-  height: 90%;
+  height: 80%;
 
   display: flex;
   align-items: flex-start;
@@ -328,6 +332,7 @@ h1 {
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
+    margin-bottom: 20px;
   }
 }
 
@@ -372,9 +377,9 @@ h1 {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  line-height: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 25px;
 
   gap: 20px;
 }
