@@ -277,7 +277,7 @@ h1 {
 .funcionamento-horarios-kids p {
   display: flex;
   justify-content: center;
-  
+
   letter-spacing: 0.8px;
   margin-bottom: 5px;
 }
@@ -296,7 +296,7 @@ h1 {
 
 .professores-container{
   width: 100%;
-  height: 60vh;
+  height: 65vh;
 
   display: flex;
   align-items: center;
@@ -379,7 +379,7 @@ h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  line-height: 25px;
+  line-height: 20px;
 
   gap: 20px;
 }
@@ -499,4 +499,259 @@ h1 {
   background-color:rgb(85 , 1, 1);
   font-size: 15px;
   font-weight: 50;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  header nav ul {
+    gap: 20px;
+  }
+  
+  .info {
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  .logo {
+    margin: 25px auto;
+  }
+
+  .button {
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .funcionamento-container {
+    height: 50vh;
+    gap: 100px;
+  }
+  
+  .funcionamento-horarios-kids {
+    margin: 0 50px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .professor-description {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  header {
+    flex-direction: row;
+  }
+  
+  header nav ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .app {
+    background-position: center 20%;
+    padding: 10px;
+  }
+
+  .logo {
+    margin: 20px auto;
+  }
+
+  .info {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .button {
+    margin: 20px auto;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .about {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .image-about {
+    display: none;
+  }
+
+  .left-about, .center-about, .image-about {
+    margin: 10px auto;
+  }
+  
+  .funcionamento-container {
+    flex-direction: column;
+    height: auto;
+
+    gap: 20px;
+  }
+
+  .funcionamento-horarios-adulto, .funcionamento-horarios-kids {
+    margin: 10px auto;
+  }
+
+  .professores-container {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  
+  .card-professor {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .local {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .local-map {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 5px;
+  }
+  
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  header nav ul {
+    display: none;
+  }
+  
+  .navigation__social {
+    margin-top: 5px;
+    justify-content: center;
+  }
+  
+  .app {
+    background-position: center 10%;
+    padding: 5px;
+  }
+
+  .logo {
+    width: 100px;
+    margin: 10px auto;
+  }
+
+  .info {
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h5 {
+    font-size: 0.8em;
+  }
+
+  .info p {
+    font-size: 0.8em;
+  }
+
+  .button {
+    margin: 50px auto;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .schedule-button, .contact-button {
+    font-size: 0.8em;
+    padding: 8px 16px;
+  }
+  
+  .about {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-about, .center-about, .image-about {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .image-about {
+    display: none;
+  }
+  
+  .funcionamento-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 20px
+  }
+
+  .funcionamento-title{
+    h2{
+      font-size: 1em;
+    }
+  }
+
+  .funcionamento-horarios-adulto, .funcionamento-horarios-kids {
+    margin: 10px auto;
+    width: 90%;
+    
+    p {
+      font-size: 0.8em;
+    }
+  }
+
+  .professores-container {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+  
+  .card-professor {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .local {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .local-title h2 {
+    font-size: 1.5em;
+  }
+
+  .local-map {
+    width: 90%;
+  }
+  
+  .maps-location {
+    height: 200px;
+  }
+
+  .footer {
+    font-size: 0.8em;
+    padding: 10px 0;
+  }
+
+  .btn-whatsapp img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tooltip-text {
+    font-size: 0.8em;
+  }
 }
